@@ -10,7 +10,7 @@ void main() {
             title: const Text('Dicee'),
             backgroundColor: Colors.indigo,
           ),
-          body: DicePage(),
+          body: DicedPage(),
         ),
       )
   );
