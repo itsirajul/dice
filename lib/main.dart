@@ -10,7 +10,7 @@ void main() {
             title: const Text('Dicee'),
             backgroundColor: Colors.indigo,
           ),
-          body: DicedPage(),
+          body: DicePage(),
         ),
       )
   );
@@ -32,14 +32,6 @@ class DicePage extends StatelessWidget {
            ),
           ),
 
-          Expanded(
-            child: FlatButton(
-                onPressed: () {
-                  print('Left Button Got Pressed ');
-                },
-                child: Image.asset('images/dice2.png')
-            ),
-          ),
           Expanded(
             child: FlatButton(
                 onPressed: () {
