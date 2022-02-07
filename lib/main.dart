@@ -7,7 +7,7 @@ void main() {
         home: Scaffold(
           backgroundColor: Colors.blueAccent,
           appBar: AppBar(
-            title: const Text('Dicee'),
+            title: const Text('Dice'),
             backgroundColor: Colors.indigo,
           ),
           body: DicePage(),
@@ -33,14 +33,6 @@ class DicePage extends StatelessWidget {
            ),
           ),
 
-          Expanded(
-            child: FlatButton(
-                onPressed: () {
-                  print('Left Button Got Pressed ');
-                },
-                child: Image.asset('images/dice2.png')
-            ),
-          ),
 
 
 
