@@ -5,7 +5,7 @@ void main() {
       MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Colors.greenAccent,
           appBar: AppBar(
             title: const Text('Dice'),
             backgroundColor: Colors.indigo,
