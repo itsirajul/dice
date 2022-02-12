@@ -46,5 +46,5 @@ class DicePage extends StatelessWidget {
         ],
       ),
     );
-  } c
+  }
 }
