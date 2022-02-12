@@ -5,12 +5,12 @@ void main() {
       MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.greenAccent,
+          backgroundColor: Colors.deepPurpleAccent,
           appBar: AppBar(
             title: const Text('Dice'),
-            backgroundColor: Colors.indigo,
+            backgroundColor: Colors.green,
           ),
-          body: DicePage(),
+          body:  DicePage(),
         ),
       )
   );
@@ -27,7 +27,7 @@ class DicePage extends StatelessWidget {
           Expanded(
            child: FlatButton(
              onPressed: () {
-               print('Right Button Got Pressed ');
+               print('Left Button ');
              },
              child: Image.asset('images/dice1.png'),
            ),
@@ -36,15 +36,19 @@ class DicePage extends StatelessWidget {
           Expanded(
             child: FlatButton(
               onPressed: () {
-                print('Right Button Got Pressed ');
+                print('Right Button ');
               },
               child: Image.asset('images/dice1.png'),
             ),
           ),
-
-
-
-
+          Expanded(
+            child: FlatButton(
+              onPressed: () {
+                print('Right Button ');
+              },
+              child: Image.asset('images/dice1.png'),
+            ),
+          ),
         ],
       ),
     );
