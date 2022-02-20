@@ -34,9 +34,6 @@ class DicePage extends StatelessWidget {
           ),
 
           Expanded(
-            child: FlatButton
-
-          Expanded(
             child: FlatButton(
               onPressed: () {
                 print('Right Button ');
