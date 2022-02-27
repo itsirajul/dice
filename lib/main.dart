@@ -5,10 +5,10 @@ void main() {
       MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.deepPurpleAccent,
+          backgroundColor: Colors.blueAccent,
           appBar: AppBar(
             title: const Text('Dice'),
-            backgroundColor: Colors.green,
+            backgroundColor: Colors.blueAccent,
           ),
           body:  DicePage(),
         ),
