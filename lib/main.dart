@@ -38,7 +38,7 @@ class DicePage extends StatelessWidget {
               onPressed: () {
                 print('Right Button ');
               },
-              child: Image.asset('images/dice1.png'),
+              child: ,
             ),
           ),
         ],
