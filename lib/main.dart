@@ -10,31 +10,36 @@ void main() {
             title: const Text('Dice'),
             backgroundColor: Colors.blueGrey,
           ),
-          body:  DicePage(),
+          body:  Dicepage(),
         ),
       )
   );
 }
 
-class DicePage extends StatelessWidget {
+class Dicepage extends StatefulWidget {
+  const Dicepage({Key? key}) : super(key: key);
 
   @override
+  State<Dicepage> createState() => _DicepageState();
+}
+
+class _DicepageState extends State<Dicepage> {
+  int leftDiceNumber=1;
+  @override
   Widget build(BuildContext context) {
-
-    var leftDiceNumber=4;
-
-
     return Center(
       child: Row(
         children:  [
 
           Expanded(
-           child: TextButton(
-             onPressed: () {
-               print('Left Button ');
-             },
-             child: Image.asset('images/dice$leftDiceNumber.png'),
-           ),
+            child: TextButton(
+              onPressed: () {
+                setState(() {
+                  leftDiceNumber=6;
+                });
+              },
+              child: Image.asset('images/dice$leftDiceNumber.png'),
+            ),
           ),
 
           Expanded(
@@ -45,9 +50,9 @@ class DicePage extends StatelessWidget {
               child: Image.asset('images/dice1.png'),
             ),
           ),
-
         ],
       ),
     );
   }
 }
+
